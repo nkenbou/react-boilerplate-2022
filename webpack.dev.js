@@ -16,6 +16,7 @@ module.exports = mergeWithRules({
     static: {
       directory: path.join(__dirname, "public"),
     },
+    hot: true,
     historyApiFallback: true,
   },
   module: {
