@@ -22,5 +22,5 @@
     }
   },
   "rules": { "import/order": ["error"] },
-  "ignorePatterns": ["/webpack.*.js", "/dist/"]
+  "ignorePatterns": ["/dist/", "/webpack.*.js", "/jest.config.js"]
 }
