@@ -37,6 +37,20 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(sa|sc|c)ss$/i,
+        use: [
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: "[path][name]__[local]--[hash:base64:5]",
+              },
+            },
+          },
+          "sass-loader",
+        ],
+      },
     ],
   },
   resolve: {
