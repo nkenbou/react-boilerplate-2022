@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "webpack serve --open --config webpack.dev.js",
+    "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack  --config webpack.prod.js",
     "lint": "run-p -l -c --aggregate-output lint:*",
     "lint:eslint": "eslint .",
