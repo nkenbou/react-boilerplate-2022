@@ -22,5 +22,5 @@
     }
   },
   "rules": { "import/order": ["error"] },
-  "ignorePatterns": ["/webpack.config.js", "/dist/"]
+  "ignorePatterns": ["/webpack.*.js", "/dist/"]
 }

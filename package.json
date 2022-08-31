@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "webpack-cli serve --open --mode development",
-    "build": "webpack --mode production",
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack  --config webpack.prod.js",
     "lint": "run-p -l -c --aggregate-output lint:*",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
