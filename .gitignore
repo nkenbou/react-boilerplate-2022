@@ -7,5 +7,9 @@
 # typescript
 *.tsbuildinfo
 
+# visual regression test
+__screenshots__
+.reg
+
 # misc
 .envrc
