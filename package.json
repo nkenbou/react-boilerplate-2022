@@ -18,7 +18,7 @@
     "unit": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "vrt:capture": "storycap http://localhost:6006 -o ./.reg/actual",
+    "vrt:capture": "rm -rf ./.reg/actual && storycap http://localhost:6006 -o ./.reg/actual",
     "vrt:compare": "reg-cli ./.reg/actual ./.reg/expected ./.reg/diff -J ./.reg/out.json -R ./.reg/index.html",
     "vrt": "run-s vrt:capture vrt:compare",
     "vrt:approve": "yarn vrt:compare -U"
