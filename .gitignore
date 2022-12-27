@@ -8,9 +8,12 @@
 *.tsbuildinfo
 
 # visual regression test
-/.reg/actual
+/.reg/actual/
+/.reg/diff/
 /.reg/out.json
 /.reg/index.html
 
 # misc
 .envrc
+.yarnrc
+/.vscode/
