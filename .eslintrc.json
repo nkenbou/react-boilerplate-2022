@@ -1,11 +1,5 @@
 {
   "root": true,
-  "env": {},
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "plugins": ["import-access"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -17,15 +11,15 @@
     "plugin:storybook/recommended",
     "prettier"
   ],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+  "plugins": ["import-access"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "import/order": ["error"],
     "import-access/jsdoc": ["error"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
   },
   "overrides": [
     {
@@ -35,6 +29,11 @@
       }
     }
   ],
-
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {},
   "ignorePatterns": ["/dist/", "/webpack.*.js", "/jest.config.js"]
 }
